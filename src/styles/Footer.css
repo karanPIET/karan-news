@@ -1,0 +1,28 @@
+.footer {
+  background: #2c3e50;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.footer-text {
+  margin: 0;
+  opacity: 0.8;
+}
