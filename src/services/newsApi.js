@@ -1,10 +1,9 @@
-const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
-const BASE_URL = 'https://newsapi.org/v2';
+const BASE_URL = '/.netlify/functions';
 
 export const fetchNews = async (category, page = 1, pageSize = 12) => {
   try {
     const response = await fetch(
-      `${BASE_URL}/top-headlines?country=us&category=${category}&page=${page}&pageSize=${pageSize}&apiKey=${API_KEY}`
+      `${BASE_URL}/fetch-news?category=${category}&page=${page}&pageSize=${pageSize}`
     );
     
     if (!response.ok) {
