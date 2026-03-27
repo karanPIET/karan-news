@@ -59,3 +59,107 @@
   background: rgba(255,255,255,0.3);
   font-weight: bold;
 }
+
+.search-form {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s;
+  width: 200px;
+}
+
+.search-input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.search-input:focus {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.5);
+}
+
+.search-btn {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.search-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.dark-mode-btn {
+  font-size: 1.2rem !important;
+  padding: 0.5rem 1rem !important;
+
+}
+
+
+/* Container */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column; /* 👈 IMPORTANT */
+  gap: 0.75rem;
+}
+
+/* ROW 1 */
+.navbar-top {
+  display: flex;
+  align-items: center;
+}
+
+/* ROW 2 */
+.navbar-bottom {
+  display: flex;
+  justify-content: space-between; /* 👈 KEY */
+  align-items: center;
+}
+
+/* LEFT */
+.navbar-categories {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* RIGHT */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-actions {
+  margin-left: auto; /* This forces the right section to stay at the end */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar-bottom {
+  display: flex;
+  justify-content: space-between; /* This pushes items to the far left and far right */
+  align-items: center;
+  width: 100%; /* Ensures it spans the full container width */
+}
